@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css" />
+    <title>CIB en pesos / tiempo real</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>CIB en pesos / en tiempo real</h3>
+      <h1 id="calculation"> $- </h1>
+      <p id="last-value-change">Último cambio de valor hace: - </p>
+      <p class="hidden" id="last-data-read">Última toma de datos hace: - </p>
+      <p>Datos tomados desde: <a id="source" href="https://es.tradingview.com/chart/BgSKqePt/" target="_blank"> TradingView </a></p>
+
+      <button class="hidden" onclick="clearInterval(timer)">Stop getting data</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,33 @@
+TÍTULO: "CIB en pesos / en tiempo real"
+
+Cálculo = ( CIB * (USD/COP) ) / 4
+
+- Mostrar la URL desde la cual se obtuvieron los últimos datos usados en el cálculo (web scrapping o API pública).
+- Definir con qué intervalos se harían los scrappings: Cuando las dos funciones Node devuelvan un valor, conjuntamente? ---> SI!
+- El contador de tiempo debe incluir la funcionalidad de contar minutos y horas, si no hay cambios después de 60 segundos / 60 minutos,
+  aunque éste si debería temporizar con un setInterval. Las funciones Node son asíncronas.
+
+- Hay que tener la página de TradingView (o la de la fuente de datos) abierta para poder obtenerlos y hacer el cálculo con ellos?
+- Agregar luego input donde se pueda poner URL custom como fuente de los datos, si la URL por defecto no funciona o bannea la IP temporalmente
+- Es necesario agregar botón que detenga el intervalo de toma de datos? --> clearInterval()
+
+- Subir la app a Netlify y ver si funciona desde allí
+- Convertir la app a ejecutable para Windows y Mac, con Electron
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+YA HECHAS:
+
+- Se debe mostrar el tiempo en segundos transcurrido desde la última vez que se hizo el cálculo y se actualizó el valor en pantalla.
+- El resultado del cálculo debe mostrarse rojo si es menor que el inmediatamente anterior, y verde si es mayor.
+- No es necesario mostrar qué tanto varió con respecto al valor inmediatamente anterior, hacia arriba o hacia debajo. Sólo si varió o no.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+"Símbolos" a scrappear en la página de TradingView (opción "ticker"):
+- CIB
+- USDCOP
+
+Fuentes de datos: 
+https://es.tradingview.com/chart/BgSKqePt/
+https://es.tradingview.com/symbols/NYSE-CIB/
+https://es.tradingview.com/symbols/USDCOP/?exchange=FX_IDC
