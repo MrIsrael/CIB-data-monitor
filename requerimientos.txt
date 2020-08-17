@@ -2,17 +2,17 @@ TÍTULO: "CIB en pesos / en tiempo real"
 
 Cálculo = ( CIB * (USD/COP) ) / 4
 
-- Mostrar la URL desde la cual se obtuvieron los últimos datos usados en el cálculo (web scrapping o API pública).
-- Definir con qué intervalos se harían los scrappings: Cuando las dos funciones Node devuelvan un valor, conjuntamente? ---> SI!
+- Mostrar la URL desde la cual se obtuvieron los últimos datos usados en el cálculo (web scrapping o API pública) --> https://cib-data-monitor.netlify.app/
+- Definir con qué intervalos se harían los scrappings: Cuando las dos funciones Node devuelvan un valor, conjuntamente? --> SI!
 - El contador de tiempo debe incluir la funcionalidad de contar minutos y horas, si no hay cambios después de 60 segundos / 60 minutos,
   aunque éste si debería temporizar con un setInterval. Las funciones Node son asíncronas.
 
-- Hay que tener la página de TradingView (o la de la fuente de datos) abierta para poder obtenerlos y hacer el cálculo con ellos?
-- Agregar luego input donde se pueda poner URL custom como fuente de los datos, si la URL por defecto no funciona o bannea la IP temporalmente
+- Hay que tener la página de TradingView (o la de la fuente de datos) abierta para poder obtenerlos y hacer el cálculo con ellos? --> NO!
+- Agregar luego input donde se pueda poner URL custom como fuente de los datos, si la URL por defecto no funciona o bannea la IP temporalmente --> NO ES NECESARIO!
 - Es necesario agregar botón que detenga el intervalo de toma de datos? --> clearInterval()
 
-- Subir la app a Netlify y ver si funciona desde allí
-- Convertir la app a ejecutable para Windows y Mac, con Electron
+- Subir la app a Netlify y ver si funciona desde allí --> SI!
+- Convertir la app a ejecutable para Windows y Mac, con Electron --> NO ES NECESARIO, CONSUMIRÍA RECURSOS DEL CLIENTE INNECESARIAMENTE!
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 YA HECHAS:
@@ -28,6 +28,5 @@ YA HECHAS:
 - USDCOP
 
 Fuentes de datos: 
-https://es.tradingview.com/chart/BgSKqePt/
+https://es.tradingview.com/symbols/USDCOP/
 https://es.tradingview.com/symbols/NYSE-CIB/
-https://es.tradingview.com/symbols/USDCOP/?exchange=FX_IDC

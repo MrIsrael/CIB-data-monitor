@@ -1,7 +1,6 @@
 // Cálculo CIB en pesos en tiempo real = ( CIB * (USD/COP) ) / 4
 const interval = 1000                             // valor en milisegundos
 let timeSinceLastChange = 0, lastValue = 0
-// let lastDataRead = 0
 
 let timer = setInterval(() => {
   let random_val = ((Math.random() * 3600) + 1)
@@ -18,8 +17,3 @@ let timer = setInterval(() => {
   document.getElementById('last-value-change').innerHTML = 'Último cambio de valor hace: ' + timeSinceLastChange + ' segundos'
   timeSinceLastChange++
 }, interval)
-
-// - Se debe mostrar el tiempo en segundos transcurrido desde la última vez que se hizo el cálculo y se actualizó el valor en pantalla.
-// - El resultado del cálculo debe mostrarse rojo si es menor que el inmediatamente anterior, y verde si es mayor.
-
-// document.getElementById('source').innerHTML = '' + 'https://es.tradingview.com/chart/BgSKqePt/'
