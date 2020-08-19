@@ -42,6 +42,10 @@ p {
   color: red;
 }
 
+.same {
+  color: black;
+}
+
 /* input {
   border: 2px solid rgb(160,160,160);
   color: yellow;
