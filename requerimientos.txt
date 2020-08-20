@@ -3,7 +3,7 @@ TÍTULO: "CIB en pesos / en tiempo real"
 Cálculo = ( CIB * (USD/COP) ) / 4
 
 - Probar el entorno de ejecución en Windows, y crear un script para poner en el escritorio, que ejecute el backend en la terminal (el index.js de Node)
-  y abra el frontend en Chrome (index.htnl + app.js con live-server).
+  y abra el frontend en Chrome (index.html + app.js con live-server).
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

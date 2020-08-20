@@ -45,7 +45,7 @@ const scrapeData = async () => {
             realTimeValue.setAttribute('class', 'same') 
           }
 
-          realTimeValue.innerHTML = '$' + cibRealTime.toFixed(2)
+          realTimeValue.innerHTML = '$' + parseInt(cibRealTime / 1000) + '.' + parseInt(cibRealTime % 1000)
           secondsSinceLastDataFetch = 0
           document.getElementById('usd_cop').innerHTML = 'Último valor usd_cop consultado: COP$' + exchangeRate
           document.getElementById('nyse_cib').innerHTML = 'Último valor nyse_cib consultado: USD$' + stockValue
