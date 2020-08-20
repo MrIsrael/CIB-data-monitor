@@ -2,26 +2,23 @@ TÍTULO: "CIB en pesos / en tiempo real"
 
 Cálculo = ( CIB * (USD/COP) ) / 4
 
-- Se debe mostrar el tiempo en segundos transcurrido desde la última vez que se hizo el cálculo y se actualizó el valor en pantalla.
-- El resultado del cálculo debe mostrarse rojo si es menor que el inmediatamente anterior, y verde si es mayor.
-- No es necesario mostrar qué tanto varió con respecto al valor inmediatamente anterior, hacia arriba o hacia debajo. Sólo si varió o no.
-- Definir con qué intervalos se harían los scrappings: Cuando las dos funciones Node devuelvan un valor, conjuntamente? --> SI!
-- El contador de tiempo debe incluir la funcionalidad de contar minutos y horas, si no hay cambios después de 60 segundos / 60 minutos,
-  aunque éste si debería temporizar con un setInterval. Las funciones Node son asíncronas.
-- Incluir un switch para encender / apagar la consulta indefinida a la API. Por defecto arranca con esta funcionalidad encendida --> clearInterval() ?
-- Poner un aviso (estilo luz led que encienda momentáneamente) cada vez que se obtenga un dato nuevo? Ponerle botón de on / off a esa funcionalidad?
-  O poner un botón que muestre / oculte la información extra, como los últimos valores obtenidos de la API, y el aviso de dato nuevo recibido.
-- Poner botón que alinée el texto a derecha o izquierda, dependiendo de en qué esquina de la pantalla se quiera poner la pestaña a tamaño mínimo.
 - Probar el entorno de ejecución en Windows, y crear un script para poner en el escritorio, que ejecute el backend en la terminal (el index.js de Node)
   y abra el frontend en Chrome (index.htnl + app.js con live-server).
-- Poner botón que diga: "Ver sobrinos".
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 HECHO / FRONTEND:
 - Subir la app a Netlify y ver si funciona desde allí --> EL FRONTEND SI, EL BACKEND (scraper) NO...
 - Mostrar la URL desde la cual se obtuvieron los últimos datos usados en el cálculo (web scrapping o API pública) --> http://localhost:3500/api/data/
-
+- Definir con qué intervalos se harían los scrappings: Cuando las dos funciones Node devuelvan un valor, conjuntamente? --> SI!
+- Se debe mostrar el tiempo en segundos transcurrido desde la última vez que se hizo el cálculo y se actualizó el valor en pantalla.
+- El resultado del cálculo debe mostrarse rojo si es menor que el inmediatamente anterior, y verde si es mayor.
+- No es necesario mostrar qué tanto varió con respecto al valor inmediatamente anterior, hacia arriba o hacia debajo. Sólo si varió o no.
+- Agregar un aviso cada vez que se obtenga un dato nuevo desde la API.
+- Poner un botón que muestre / oculte la información extra, como los últimos valores obtenidos de la API, y el aviso de dato nuevo recibido.
+- El contador de tiempo debe incluir la funcionalidad de contar minutos y horas, si no hay cambios después de 60 segundos / 60 minutos,
+  aunque éste si debería temporizar con un setInterval. Las funciones del scraper son asíncronas.
+  
 HECHO / BACKEND:
 - Hay que tener la página de TradingView (o la de la fuente de datos) abierta para poder obtenerlos y hacer el cálculo con ellos? --> NO!
 - Convertir la app a ejecutable para Windows y Mac, con Electron --> NO ES NECESARIO, CONSUMIRÍA RECURSOS DEL CLIENTE INNECESARIAMENTE!
