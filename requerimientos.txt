@@ -2,9 +2,6 @@ TÍTULO: "CIB en pesos / en tiempo real"
 
 Cálculo = ( CIB * (USD/COP) ) / 4
 
-- Probar el entorno de ejecución en Windows, y crear un script para poner en el escritorio, que ejecute el backend en la terminal (el index.js de Node)
-  y abra el frontend en Chrome (index.html + app.js con live-server).
-
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 HECHO / FRONTEND:
@@ -18,7 +15,9 @@ HECHO / FRONTEND:
 - Poner un botón que muestre / oculte la información extra, como los últimos valores obtenidos de la API, y el aviso de dato nuevo recibido.
 - El contador de tiempo debe incluir la funcionalidad de contar minutos y horas, si no hay cambios después de 60 segundos / 60 minutos,
   aunque éste si debería temporizar con un setInterval. Las funciones del scraper son asíncronas.
-  
+- Probar el entorno de ejecución en Windows, y crear un script para poner en el escritorio, que ejecute el backend en la terminal (el index.js de Node)
+  y abra el frontend en Chrome (index.html + app.js con live-server).
+    
 HECHO / BACKEND:
 - Hay que tener la página de TradingView (o la de la fuente de datos) abierta para poder obtenerlos y hacer el cálculo con ellos? --> NO!
 - Convertir la app a ejecutable para Windows y Mac, con Electron --> NO ES NECESARIO, CONSUMIRÍA RECURSOS DEL CLIENTE INNECESARIAMENTE!
